@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 142, 48;
+  --bs-primary-rgb: 219, 67, 54;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -61,7 +61,10 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #ffffff;
+  --bs-button: #DB4336;
+  --bs-button-shadow: #a5352b;
+  --bs-button-hover: #e94a3b;
 }
 
 *,
@@ -235,11 +238,11 @@ sup {
 }
 
 a {
-  color: rgb(248, 112, 28);
+  color: #cd2213;
   text-decoration: underline;
 }
 a:hover {
-  color: rgb(255, 132, 48);
+  color: #DB4336;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3030,32 +3033,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #f8701c;
-  border-color: #ff714d;
+  background-color: var(--bs-button);
+  /* border-color: #ff714d; */
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f9852c;
-  border-color: #f8701c;
+  background-color: var(--bs-button-hover);
+  /* border-color: #f8701c; */
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #f8701c;
-  border-color: #f8701c;
-  box-shadow: 0 0 0 0.25rem #88500c;
+  background-color: var(--bs-button);
+  /* border-color: #f8701c; */
+  box-shadow: 0 0 0 0.25rem var(--bs-button-shadow);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f8701c;
-  border-color: #f8701c;
+  background-color: var(--bs-button);
+  /* border-color: #f8701c; */
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem var(--bs-button-shadow);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #f8701c;
-  border-color: #f8701c;
+  background-color: var(--bs-button);
+  /* border-color: #f8701c; */
 }
 
 .btn-secondary {
@@ -11319,7 +11322,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   /* background-color: #343a40; */
-  background: url("../assets/img/bg-masthead4.jpg") no-repeat center center;
+  background: url("../assets/img/background.png") no-repeat center center;
   background-size: cover;
   padding-top: 16rem;
   padding-bottom: 1rem;
@@ -11342,7 +11345,7 @@ header.masthead h1, header.masthead .h1 {
     background-position: center;
     padding-top: 16rem;
     padding-bottom: 1rem;
-    background: url("../assets/img/bg-masthead-desktop3.png") no-repeat center center;
+    background: url("../assets/img/background-desktop.png") no-repeat center center;
     background-size: cover;
   }
   header.masthead h1, header.masthead .h1 {
@@ -11358,6 +11361,13 @@ header.masthead h1, header.masthead .h1 {
   min-height: 30rem;
   background-size: cover;
   background-position: top;
+  border-radius: 20px;
+}
+.showcase .showcase-img-contain {
+  min-height: 20rem;
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: center;
   border-radius: 20px;
 }
 @media (min-width: 768px) {
@@ -11381,13 +11391,13 @@ header.masthead h1, header.masthead .h1 {
 
 .call-to-action {
   position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  /* background-color: #343a40;
+  background: url("../assets/img/bg-masthead.jpg") no-repeat center center; */
+  /* background-size: cover; */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
-.call-to-action:before {
+/* .call-to-action:before {
   content: "";
   position: absolute;
   background-color: #5e2e1c;
@@ -11396,9 +11406,9 @@ header.masthead h1, header.masthead .h1 {
   top: 0;
   left: 0;
   opacity: 0.5;
-}
+} */
 
 footer.footer {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
