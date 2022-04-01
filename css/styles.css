@@ -11363,6 +11363,14 @@ header.masthead h1, header.masthead .h1 {
   background-position: top;
   border-radius: 20px;
 }
+.showcase .showcase-vid {
+  max-height: 40rem;
+  min-height: 20rem;
+  max-width:100%;
+  background-size: cover;
+  background-position: top;
+  border-radius: 20px;
+}
 .showcase .showcase-img-contain {
   min-height: 20rem;
   background-repeat: no-repeat;
