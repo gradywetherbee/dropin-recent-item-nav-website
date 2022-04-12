@@ -15,6 +15,12 @@
     <!-- <script type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "f217e843-5250-480e-a6e6-ae061f1d84cb"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2TCZYG1XB"></script>
+    <!-- <script>
+        function addButtonCover() {
+            let node = document.getElementById('map');
+            node.insertAdjacentHTML('afterend', '<div class=\'coverFullscreenButton\'></div>');
+        }
+    </script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -30,18 +36,22 @@
             <a class="navbar-brand" href="index.html">
                 <!-- <img width="130px" height="70px" src="assets/img/logo.png" style="position:relative;top:-10px"> -->
                 <!-- <img classs="img-responsive" width="120px" height="" src="assets/img/logo-transparent.png"> -->
-                <h1 class="mt-2">📍 Jango<span style="font-size: 11px; font-weight: 500;"> (beta)</span></h1>
+                <h1 class="mt-2">📍Jango<span style="font-size: 11px; font-weight: 500;"> (beta)</span></h1>
             </a>
         </div>
     </nav>
     <!-- <p> Hello world </p> -->
     <div class="googleMap">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1u7GmgjgAKJZmIzUrtm6WF7idnTGOtsiR&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="map" onload="addButtonCover" src="https://www.google.com/maps/d/u/0/embed?mid=1u7GmgjgAKJZmIzUrtm6WF7idnTGOtsiR&ehbc=2E312F" width="640" height="480"></iframe>
+        <div class="coverFullscreenButton"></div>
     </div>
     <div class="mb-3 text-center" style="z-index: 1000; position:fixed; bottom:0; width: 100%; align-items: center;">
         <div class="col-lg-4 mt-3">
-            <a class="btn btn-primary" style="margin-right: -12px; padding-left: 24px; padding-right: 32px;" href="map.html">Today</a>
-            <a class="btn btn-primary" style="background: #C8C8C8; border-radius: 0px 0.25rem 0.25rem 0px; min-width: 110px" href="weekMap.html">This Week</a>
+            <a class="btn btn-primary" style="margin-right: -12px; padding-left: 24px; padding-right: 32px;"
+                href="map.html">Today</a>
+            <a class="btn btn-primary"
+                style="background: #C8C8C8; border-radius: 0px 0.25rem 0.25rem 0px; min-width: 110px"
+                href="weekMap.html">This Week</a>
         </div>
     </div>
 </body>
