@@ -62,9 +62,9 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #ffffff;
-  --bs-button: #DB4336;
-  --bs-button-shadow: #a5352b;
-  --bs-button-hover: #e94a3b;
+  --bs-button: #3c3c68;
+  --bs-button-shadow: #3c3c68;
+  --bs-button-hover: #4c4c78;
 }
 
 *,
@@ -81,13 +81,17 @@
 
 body {
   margin: 0;
+  background-color: #efeffa;
+  opacity: 1;
+  background-image: radial-gradient(#c6c9fc 0.5px, #efeffa 0.5px);
+  background-size: 10px 10px;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /* background-color: var(--bs-body-bg); */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -11324,9 +11328,8 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   /* background-color: #343a40; */
-  background: url("../assets/img/background.png") no-repeat center center;
   background-size: cover;
-  padding-top: 16rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 header.masthead:before {
@@ -11345,10 +11348,8 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 768px) {
   header.masthead {
     background-position: center;
-    padding-top: 16rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    background: url("../assets/img/background-desktop.png") no-repeat center center;
-    background-size: cover;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -11365,13 +11366,13 @@ header.masthead h1, header.masthead .h1 {
   background-position: top;
   border-radius: 20px;
 }
-.showcase .showcase-vid {
-  max-height: 40rem;
-  min-height: 20rem;
+.showcase-vid {
+  width: 100%;
   max-width:100%;
   background-size: cover;
   background-position: top;
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: -3px 5px 5px lightgrey;
 }
 .showcase .showcase-img-contain {
   min-height: 20rem;
