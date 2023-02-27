@@ -242,11 +242,11 @@ sup {
 }
 
 a {
-  color: #cd2213;
+  color: #3c3c68;
   text-decoration: underline;
 }
 a:hover {
-  color: #DB4336;
+  color: #4c4c78;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11361,7 +11361,7 @@ header.masthead h1, header.masthead .h1 {
   padding: 2rem 1rem;
 }
 .showcase .showcase-img {
-  min-height: 30rem;
+  /* min-height: 30rem; */
   background-size: cover;
   background-position: top;
   border-radius: 20px;
@@ -11383,7 +11383,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 768px) {
   .showcase .showcase-text {
-    padding: 7rem;
+    padding: 4rem;
     /* padding: 3rem; */
   }
 }
