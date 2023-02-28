@@ -11406,7 +11406,7 @@ header.masthead h1, header.masthead .h1 {
   background: url("../assets/img/bg-masthead.jpg") no-repeat center center; */
   /* background-size: cover; */
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 /* .call-to-action:before {
   content: "";

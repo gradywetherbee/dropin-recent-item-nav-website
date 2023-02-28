@@ -38,14 +38,14 @@
                 <div
                     class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-center text-left text-black mb-5">
                     <div>
-                        <h3 class="mb-3">
+                        <h2 class="mb-3">
                             The <strong>fastest</strong> way to delight users
-                        </h3>
+                        </h2>
                         <p class="mb-3 fs-6">
                             Give you users <strong>the recent item nav</strong> that they deserve.
                         </p>
                         <a class="btn btn-primary" href="demo/home.html">Try Demo</a>
-                        <a class="btn btn-primary" style="margin-left: 6px; min-width: 110px" href="post.html">View
+                        <a class="btn btn-primary" style="margin-left: 6px; min-width: 110px" href="#pricing">View
                             Pricing</a>
                     </div>
                 </div>
@@ -105,43 +105,94 @@
         <div class="container my-5">
             <div class="row g-0">
                 <div
-                    class="col-lg-6 order-lg-1 showcase-text d-flex flex-column justify-content-center align-items-center text-left">
-                    <div>
+                    class="col-lg-5 col-md-12 order-lg-1 d-flex flex-column justify-content-center align-items-center text-left">
+                    <div class="col-md-8 col-lg-12">
                         <h2>What is Shortbread?</h2>
-                        <p class="lead mb-0">
+                        <p class="lead mb-1">
                             Shortbread is a drop-in, SPA-friendly recent item nav for SaaS products that can be set up
                             in less than 5 minutes.
                         </p>
+                        <ul class="fs-6">
+                            <li>Works for each object in your app</li>
+                            <li>No new endpoints</li>
+                            <li>Looks native</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 text-white d-flex flex-column justify-content-center align-items-center my-5">
-                    <img src="assets/img/tasks recent item.png" width="100%" style='max-width:500px;' />
+                <div
+                    class="col-lg-6 col-xl-5 col-md-12 text-white d-flex flex-column justify-content-center align-items-center my-5">
+                    <div
+                        style="background: #272822; border-radius:6px; max-width: 100%; overflow:auto;width:auto;padding:1.4em .6em;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <pre style="margin: 0; line-height: 125%"></pre>
+                                </td>
+                                <td>
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #b7b7fa">// Install Shortbread with single script tag</span>
+
+<span style="color: #b7b7fa">&lt;</span><span style="color: #b7b7fa">script</span> <span style="color: #b7b7fa">src</span><span style="color: #b7b7fa">=</span><span style="color: #e6db74">&quot;https://js.shortbread.app/YOUR_API_KEY&quot;</span><span style="color: #b7b7fa">/&gt;</span>
+                    
+
+
+<span style="color: #b7b7fa">// Yes, seriously it's super easy</span>
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <img src="assets/img/tasks recent item.png" width="100%" style='max-width:500px; padding-right: 3em;' /> -->
                 </div>
+                <div class="col-lg-1"></div>
             </div>
-            <!-- <div class="row g-0">
-                <div class="col-lg-6 showcase-text">
-                    <h2>How does it work?</h2>
-                    <p class="lead mb-0">Check out the map of nearby adventures that other NU students have posted. Find
-                        one that looks fun, join the GroupMe group via the link on the map, and meet up. Toggle between
-                        adventures happening today and
-                        adventures happening in the next week.</p>
-                </div>
-                <div class="col-lg-6 text-white showcase-img bg-rotate-left">
-                    <video class="showcase-vid" autoplay muted playsinline loop id="myVideo">
-                        <source src="assets/img/find adventure4.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <div>
+                <a id="contacts"></a>
+                <a id="deals"></a>
+                <a id="conversations"></a>
+                <a id="beers"></a>
             </div>
-            <div class="row flex-row-reverse g-0">
-                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                    <h2>'Cats Only</h2>
-                    <p class="lead mb-0">At this point, Jango is only being released to NU students. Jango was built by
-                        two NU alums on a mission to make it easier to go on irl adventures today.</p>
+            <div class="row g-0 my-5" id="pricing">
+                <div class="col-lg-2"></div>
+                <div
+                    class="col-lg-3 col-md-12 order-lg-0 d-flex flex-column justify-content-center align-items-center text-left">
+                    <div class="col-md-8 col-lg-12">
+                        <h1>Just $25/mo</h1>
+                        <p class="lead mb-1">
+                            Less costly than 1 hr of dev time
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-6 order-lg-2 text-white showcase-img bg-rotate-right"
-                    style="background-image: url('https://dailynorthwestern.com/wp-content/uploads/2018/08/MARCH_zacklaurence-cmyk.jpg')">
+                <div class="col-lg-1"></div>
+                <div
+                    class="col-lg-6 col-xl-5 col-md-12 mb-5 text-white d-flex flex-column justify-content-center align-items-center my-5"
+                    style="box-shadow: -3px 5px 5px lightgrey;""
+                    >
+                    <!-- <img src="assets/img/tasks recent item.png" width="100%" style='max-width:500px; padding-right: 3em;' /> -->
+                    <nav class="navbar navbar-expand navbar-dark bg-dark px-3" style="width: 100%;">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-flex align-items-center" href="#contacts">
+                                <span class="fs-3">🍻 </span> &puncsp; Pubspot
+                            </a>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conversations">Conversations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#deals">Deals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#beers">Beers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div style="height: 240px; width: 100%; background-color: rgb(240, 240, 240);"></div>
                 </div>
-            </div> -->
+
+            </div>
         </div>
     </section>
     <!-- Testimonials-->
@@ -178,11 +229,16 @@
     <section class="call-to-action text-center" id="signup">
         <div class="container position-relative">
             <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <h2 class="mb-4">Ready to get started?</h2>
-                    <a class="btn btn-primary" href="map.html">
-                        Adventure now!
-                    </a>
+                <div class="col-xl-8">
+                    <h1 class="mb-4">Ready to get started?</h1>
+                    <!-- Start of Meetings Embed Script -->
+                    <div class="meetings-iframe-container"
+                        data-src="https://meetings.hubspot.com/gwetherbee?embed=true"></div>
+                    <script type="text/javascript"
+                        src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                    <!-- End of Meetings Embed Script -->
+                    <div class="d-relative" style="width: 100%; height: 150px; background: blue; position:relative; margin-top: -136px;background-image: radial-gradient(#c6c9fc 0.5px, #efeffa 0.5px);
+                    background-size: 10px 10px;"></div>
                 </div>
             </div>
         </div>
@@ -190,9 +246,9 @@
     <!-- Footer-->
     <footer class="footer">
         <div class="container">
-            <div class="row my-3">
+            <div class="row mb-3">
                 <div class="h-100 text-center my-auto">
-                    <ul class="list-inline mb-3">
+                    <ul class="list-inline">
                         <!-- <li class="list-inline-item me-4">
                             <a href="#!"><i class="bi-facebook fs-3"></i></a>
                         </li> -->
@@ -209,15 +265,15 @@
                             <a target="_blank" href="">Invest</a>
                         </li>
                         <li class="list-inline-item">⋅</li> -->
-                        <li class="list-inline-item">
-                            <a target="_blank" href="mailto:gradydub@gmail.com">Contact</a>
-                        </li>
-                        <li class="list-inline-item">⋅</li>
+                        <!-- <li class="list-inline-item">
+                            <a target="_blank" href="mailto:gradydub@gmail.com">FAQ</a>
+                        </li> -->
+                        <!-- <li class="list-inline-item">⋅</li> -->
                         <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
                         <li class="list-inline-item">⋅</li>
                         <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
                     </ul>
-                    <p class="text-muted small mb-lg-0">&copy; Jango 2022. All Rights Reserved.</p>
+                    <p class="text-muted small mb-lg-0">&copy; Shortbread 2023. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
