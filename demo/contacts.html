@@ -10,11 +10,53 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="./../assets/demo-favicon.ico" />
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="./../css/styles.css" rel="stylesheet" />
+    <script>
+        let recents = localStorage.getItem('dropin-recent-item-nav')
+        if (!recents) {
+            localStorage.setItem('dropin-recent-item-nav',
+                JSON.stringify({
+                    "contacts": [
+                        {
+                            "path": "/demo/contacts/kirk.html",
+                            "url": "https://shortbread.app/demo/contacts/kirk.html",
+                            "name": "Kirk"
+                        },
+                        {
+                            "path": "/demo/contacts/bones.html",
+                            "url": "https://shortbread.app/demo/contacts/bones.html",
+                            "name": "Bones"
+                        }
+                    ],
+                    "conversations": [
+                        {
+                            "path": "/demo/conversations/time-travel.html",
+                            "url": "https://shortbread.app/demo/conversations/time-travel.html",
+                            "name": "Time Travel"
+                        },
+                        {
+                            "path": "/demo/conversations/roasting-spock.html",
+                            "url": "https://shortbread.app/demo/conversations/roasting-spock.html",
+                            "name": "Roasting Spock"
+                        }
+                    ],
+                    "deals": [
+                        {
+                            "path": "/demo/deals/taproom.html",
+                            "url": "https://shortbread.app/demo/deals/taproom.html",
+                            "name": "Starfleet Taproom Remodel"
+                        }
+                    ]
+                })
+            )
+        }
+    </script>
     <!-- <script async defer src="http://localhost:8000/script/UVZsCsNCEuio2bDzx3VmumGO"></script> -->
     <script async defer src="https://js.shortbread.app/script/OIaWJosplYSAUN4VzPoqXQEX"></script>
 </head>
@@ -32,7 +74,8 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" id="contacts-link" href="contacts.html">Contacts</a>
+                        <a class="nav-link active" aria-current="page" id="contacts-link"
+                            href="contacts.html">Contacts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="deals-link" href="deals.html">Deals</a>
